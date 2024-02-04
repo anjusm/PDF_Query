@@ -9,7 +9,7 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
-os.environ["OPENAI_API_KEY"] = "api_key"
+os.environ["OPENAI_API_KEY"] = st.secrets["api_key"])
 
 # Vertical sidebar contents
 with st.sidebar: 
